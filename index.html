@@ -17,7 +17,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-Differentiate between Cold or Allergies <!-- added goal of code-->
+Differentiate between introversion or social anxiety <!-- added goal of code-->
  
 Known Issues:
 The app is not complete yet
@@ -36,28 +36,28 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
-        var allergy_percent = 0;
-        var cold_percent = 0;
+        var introversion_count = 0;
+        var SocialAnxiety_count = 0;
+        var intoversion_percent = 0;
+        var SocialAnxiety_percent = 0;
 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count);
+        function introversionAdd(){
+            introversion_count = introversion_count + 1;
+		alert("introversion_count is " + introversion_count + "\nSocialAnxiety_count is " + SocialAnxiety_count);
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
-            alert("allergy_count is " + allergy_count + "\ncold_count is " + cold_count);
+        function SocialAnxietyAdd(){
+            SocialAanxiety_count = SocialAnxiety_count + 1;
+            alert("SocialAnxiety_count is " + SocialAnxiety_count + "\nintroversion_count is " + introversion_count);
         }
 
         function changeText(){
-            var allergy_percent = allergy_count/(allergy_count + cold_count)*100;
-            var cold_percent = cold_count/(allergy_count + cold_count)*100;
+            var introversion_percent = introversion_count/(introversion_count + SocialAnxiety_count)*100;
+            var SocialAnxiety_percent = SocalAnxiety_count/(introversion_count + SocialAnxiety_count)*100;
             var initialText = document.getElementById("results"); 
-            initialText.innerHTML = "Probability it is allergies = " + allergy_percent + "% <br> Probability it is a cold = " + cold_percent + "%"
+            initialText.innerHTML = "Probability it is introversion = " + introversion_percent + "% <br> Probability it is a cold = " + SocialAnxiety_percent + "%"
 
 
         }
