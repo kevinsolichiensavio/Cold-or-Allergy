@@ -37,27 +37,27 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
         var introversion_count = 0;
-        var SocialAnxiety_count = 0;
+        var extroversion_count = 0;
         var intoversion_percent = 0;
-        var SocialAnxiety_percent = 0;
+        var extroversion_percent = 0;
 
 
         function introversionAdd(){
             introversion_count = introversion_count + 1;
-		alert("introversion_count is " + introversion_count + "\nSocialAnxiety_count is " + SocialAnxiety_count);
+		alert("introversion_count is " + introversion_count + "\nextroversion_count is " + extroversion_count);
 
         }
 
-        function SocialAnxietyAdd(){
-            SocialAanxiety_count = SocialAnxiety_count + 1;
-            alert("SocialAnxiety_count is " + SocialAnxiety_count + "\nintroversion_count is " + introversion_count);
+        function extroversionAdd(){
+            extroversion_count = extroversion_count + 1;
+            alert("extroversion_count is " + extroversion_count + "\nintroversion_count is " + introversion_count);
         }
 
         function changeText(){
-            var introversion_percent = introversion_count/(introversion_count + SocialAnxiety_count)*100;
-            var SocialAnxiety_percent = SocalAnxiety_count/(introversion_count + SocialAnxiety_count)*100;
+            var introversion_percent = introversion_count/(introversion_count + extroversion_count)*100;
+            var SocialAnxiety_percent = SocalAnxiety_count/(introversion_count + extroversion_count)*100;
             var initialText = document.getElementById("results"); 
-            initialText.innerHTML = "Probability it is introversion = " + introversion_percent + "% <br> Probability it is a cold = " + SocialAnxiety_percent + "%"
+            initialText.innerHTML = "Probability it is introversion = " + introversion_percent + "% <br> Probability it is a cold = " + extroversion_percent + "%"
 
 
         }
@@ -103,11 +103,11 @@ footer {
 <body>
 <body class = "w3-flat-midnight-blue">
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>Introversion or Extroversion?</h1>
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p>Wondering if you are an introvert or and extrovert? Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
